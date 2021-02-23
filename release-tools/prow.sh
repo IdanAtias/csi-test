@@ -216,9 +216,9 @@ configvar CSI_PROW_E2E_IMPORT_PATH "$(get_versioned_variable CSI_PROW_E2E_IMPORT
 # csi.sock as a TCP service for use by the csi-sanity command, which runs outside
 # of the cluster. The alternative would have been to (cross-)compile csi-sanity
 # and install it inside the cluster, which is not necessarily easier.
-configvar CSI_PROW_SANITY_REPO https://github.com/kubernetes-csi/csi-test "csi-test repo"
+configvar CSI_PROW_SANITY_REPO https://github.com/IdanAtias/csi-test/v2 "csi-test repo"
 configvar CSI_PROW_SANITY_VERSION 5421d9f3c37be3b95b241b44a094a3db11bee789 "csi-test version" # latest master
-configvar CSI_PROW_SANITY_IMPORT_PATH github.com/kubernetes-csi/csi-test "csi-test package"
+configvar CSI_PROW_SANITY_IMPORT_PATH github.com/IdanAtias/csi-test/v2 "csi-test package"
 configvar CSI_PROW_SANITY_SERVICE "hostpath-service" "Kubernetes TCP service name that exposes csi.sock"
 configvar CSI_PROW_SANITY_POD "csi-hostpathplugin-0" "Kubernetes pod with CSI driver"
 configvar CSI_PROW_SANITY_CONTAINER "hostpath" "Kubernetes container with CSI driver"
